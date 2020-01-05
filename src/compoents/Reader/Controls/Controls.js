@@ -12,29 +12,27 @@ const Controls = ({
   onChangeIdxDecrement,
   item,
   allPages,
-}) => {
-  return (
-    <section className={styles.controls}>
-      <button
-        type="button"
-        className={styles.button}
-        onClick={onChangeIdxDecrement}
-        disabled={item <= 1}
-      >
-        Назад
-      </button>
+}) => (
+  <section className={styles.controls}>
+    <button
+      type="button"
+      className={styles.button}
+      onClick={onChangeIdxDecrement}
+      disabled={item <= 1}
+    >
+      Назад
+    </button>
 
-      <button
-        type="button"
-        className={styles.button}
-        onClick={onChangeIdxIncrement}
-        disabled={item >= allPages}
-      >
-        Вперед
-      </button>
-    </section>
-  );
-};
+    <button
+      type="button"
+      className={styles.button}
+      onClick={onChangeIdxIncrement}
+      disabled={item >= allPages}
+    >
+      Вперед
+    </button>
+  </section>
+);
 
 Controls.propTypes = {
   onChangeIdxIncrement: T.func.isRequired,

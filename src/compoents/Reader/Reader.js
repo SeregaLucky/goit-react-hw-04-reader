@@ -45,7 +45,7 @@ class Reader extends Component {
         return;
       }
 
-      /* если вели число в приделе линны массиве */
+      /* если вели число в приделе длинны массиве */
       history.push({
         ...location,
         search: `item=${item}`,
